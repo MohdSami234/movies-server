@@ -4,6 +4,9 @@ let express = require("express");
 let data = require("./data.json");
 let server = express();
 
+const cors = require("cors");
+server.use(cors());
+
 
  
 
