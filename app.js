@@ -31,6 +31,9 @@ server.get("/genre", function (req, res) {
   res.json(uniqueGenreObjects);
 });
 
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+    console.log(`server running`);
+});
 
-app.listen(process.env.PORT ||4000);
  
