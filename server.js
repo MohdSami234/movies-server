@@ -1,9 +1,7 @@
 let express = require("express");
-const { append } = require("express/lib/response");
+ 
 
 let data = require("./data.json");
-
-//ek naya server bnade but ye sirf create krti use chalu nhi krti
 let server = express();
 
 
