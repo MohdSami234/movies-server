@@ -1,9 +1,18 @@
 let express = require("express");
+const { append } = require("express/lib/response");
 
 let data = require("./data.json");
 
 //ek naya server bnade but ye sirf create krti use chalu nhi krti
 let server = express();
+const cors = require("cors");
+ 
+server.use(
+  cors({
+    origin: "*",
+  })
+
+)
 
 server.get("/movies", function (req, res) {
   res.json(data);
