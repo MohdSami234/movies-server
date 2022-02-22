@@ -32,7 +32,7 @@ server.get("/genre", function (req, res) {
 });
 
 const port = process.env.PORT || 4000;
-app.listen(port, () => {
+server.listen(port, () => {
     console.log(`server running`);
 });
 
