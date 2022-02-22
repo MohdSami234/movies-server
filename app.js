@@ -31,6 +31,6 @@ server.get("/genre", function (req, res) {
   res.json(uniqueGenreObjects);
 });
 
- 
-server.listen(process.env.PORT ||4000);
+
+app.listen(process.env.PORT ||4000);
  
