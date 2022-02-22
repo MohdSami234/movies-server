@@ -5,9 +5,7 @@ let data = require("./data.json");
 let server = express();
 
 
-server.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*")
-}) 
+ 
 
 server.get("/movies", function (req, res) {
   res.json(data);
